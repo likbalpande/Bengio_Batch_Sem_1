@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+button {
+    color: white;
+    background-color: navy;
+    opacity: 0.85;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    border: 1px solid white;
+
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    /* scale: 1.1; */
+    opacity: 1;
+}
+
+button:active {
+    scale: 0.85;
+}
+
+p:hover {
+    color: brown;
+}
+
+nav {
+    position: relative;
+    background-color: aqua;
+    display: flex;
+    gap: 16px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    border: 1px solid saddlebrown;
+    padding: 8px;
+    border-radius: 0px;
+    background-color: lightgray;
+}
+
+nav:hover .menu {
+    /* background-color: yellow; */
+    display: block;
+}
+
+@media (width<600px) {
+    nav {
+        display: none;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
